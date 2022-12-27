@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background: #E0EAFC;  /* fallback for old browsers */
+    background: #E0EAFC;
     font-family:  'Bebas Neue',sans-serif;
     letter-spacing: 2px;
   }
@@ -111,8 +111,8 @@ body {
     font-size: smaller;
   }
   .container{
-      width: 80vh;
-      background: #CFDEF3;
+    width: 75vh;
+    background-color: rgba(125, 123, 123,0.3);
 }
 @media screen and (max-width: 497px) {
   .skor{
