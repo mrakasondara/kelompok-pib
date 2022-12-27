@@ -1,0 +1,123 @@
+body {
+    text-align: center;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family:  'Bebas Neue',sans-serif;
+    letter-spacing: 2px;
+  }
+  .container {
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 15px 50px;
+    background-color: rgba(125, 123, 123,0.3);
+    width: 70vw;
+    justify-content: center;
+  }
+  .container>h2{
+    font-size: 20px;
+  }
+  .skor{
+    background-color: rgba(36, 35, 35,0.6);
+    color: rgb(255, 255, 255);
+    margin: 20px auto;
+    padding: 10px;
+    width: 50vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nilai{
+    padding: 8px;
+    background-color: rgb(80, 92, 88);
+  }
+  .action {
+    max-width: 800px;
+    padding: 30px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    transition: 0.7s;
+    animation-name: anim-fade;
+  }
+  .b{
+    margin: 10px;
+  }
+  .action:hover{
+    background-color: rgba(237, 237, 238, 0.8);
+    box-shadow: 0 0 10px 7px black;
+  }
+  .options {
+    flex: 1 1 30%;
+    border-radius: 50%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    padding: 10px;
+    animation-fill-mode: forwards;
+    width: 100%;
+    animation-name: anim-fade;
+    animation-duration: 0.7s;
+    max-width: 120px;
+    transition: 0.7s;
+  }
+  .display-moves {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+.options{
+    background-color: rgb(40, 40, 40);
+    transition: background 1s;
+  }
+  .separator {
+    font-size: 5em;
+  }
+  .move>img{
+    width: 90px;
+  }
+  .options:hover {
+    background: lightseagreen;
+  }
+  .tips{
+    font-size: 20px;
+  }
+@keyframes anim-fade {
+  0%{
+      opacity: 0;
+      transform: scale(0);
+    }
+  100%{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+@keyframes animasi {
+  0%{
+    background-color: inherit;
+    box-shadow: 0;
+  }
+  100%{
+    background-color: inherit;
+    box-shadow: 0;
+  }
+}
+@media screen and (max-width: 559px) {
+  .skor{
+    font-size: smaller;
+  }
+}
+@media screen and (max-width: 497px) {
+  .skor{
+    font-size: smaller;
+  }
+  .display-moves{
+    flex-direction: column;
+  }
+}
