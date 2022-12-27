@@ -114,6 +114,7 @@ body {
   }
   .container{
       width: 80vh;
+      background: #CFDEF3;
 }
 @media screen and (max-width: 497px) {
   .skor{
