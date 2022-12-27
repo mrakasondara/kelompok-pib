@@ -112,6 +112,8 @@ body {
   .skor{
     font-size: smaller;
   }
+  .container{
+      width: 80vh;
 }
 @media screen and (max-width: 497px) {
   .skor{
