@@ -96,20 +96,7 @@
         }
 
         //fungsi dibawha untuk mengecek dan menentukan siapa yang akan jadi pemenangnya
-        /* 
-        function checkWinner() 
-        {
-          if (pScore === 5 || cScore === 5) {
-            const winner = pScore === 5
-                ? "Selamat! Kamu Memenangkan Permainan!"
-                : "Computer Memenangkan Permainan! Coba lagi!";
-            alert(winner);
-            return true;
-          }
-          return false;
-        }
-        */
-
+        
         function checkWinner()
         {
           if (pScore ===5){
@@ -127,7 +114,7 @@
             }
               const menang = pScore
               if (menang === 5) {
-                alert('Selamat kamu memenangkan pertandingan','success');
+                alert('Selamat kamu memenangkan permainan','success');
               }
             return true;
           }else if(cScore ===5){
@@ -145,7 +132,7 @@
             }
               const kalah = cScore
               if (kalah === 5) {
-                alert('Kamu Kalah, computer mengalahkanmu,coba lagi ','danger')
+                alert('Kamu Kalah computer mengalahkanmu,coba lagi ','danger')
               }
             return true;
           }
